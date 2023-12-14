@@ -1,0 +1,8 @@
+#ifndef PRIMALITYTESTS_FASTEXPONENTIATION_H
+#define PRIMALITYTESTS_FASTEXPONENTIATION_H
+#define PROBABLY_PRIME 1
+#define COMPOSITE 0
+
+int fastExponentiation(int base, int exp, int mod);
+
+#endif //PRIMALITYTESTS_FASTEXPONENTIATION_H
