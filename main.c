@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "./headers/rsa.h"
+#include <string.h>
 int main() {
     int** KEYS = keyGenerator(149, 181);
     printf("public key == (%d, %d)\n", KEYS[PUBLIC][0], KEYS[PUBLIC][1]);
@@ -11,5 +12,7 @@ int main() {
     printf("%d\n", C);
 
     printf("解密： %d\n", decryption(C, KEYS[PRIVATE]));
+    return 0;
+
     return 0;
 }
